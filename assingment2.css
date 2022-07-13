@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    box-sizing: border-box;
+}
+/* body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 25%;
+}
+.overview{
+    border: 2px;
+    padding: 1rem;
+    transform: translateY(101%);
+    visibility: hidden;
+
+}
+.row{
+    display: flex;
+    flex-direction: column;
+}
+.movie{
+    border: 2px;
+    width: 288px;
+height: 290px;
+border-radius: 8px;
+text-align: center;
+box-shadow: 0 2px 4px 5px rgba(0,0,0,0.1) ;
+border-color: white;
+color: white;
+padding: 6px;
+overflow: hidden;
+margin: 1rem;
+
+}
+.movie img{
+    width: 100%;
+}
+
+.movie:hover .overview{
+    transform: translateY(0);
+    visibility: visible;
+}
+
+.movie-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform: translateY(0);
+}
+
+.movie:hover .movie-info{
+    transform: translateY(-500%);
+}
